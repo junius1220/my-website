@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine’s Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+   <section class="step active" id="step0">
+    <h1>Hi, gangster doc!!</h1>
+    <p>Will you go on a date with me?</p>
+
+    <button onclick="yes()">Yes 💖</button>
+    <button class="secondary" onclick="no()">No 🙈</button>
+</section>
+
+
+
+   <section class="step" id="step1">
+    <h2>Choose the day!! 📅</h2>
+    <button onclick="select('day','January 11')">January 11</button>
+    <button onclick="select('day','January 17')">January 17</button>
+    <button onclick="select('day','January 21')">January 21</button>
+</section>
+
+    <section class="step" id="step2">
+    <h2>Choose the time!! ⏰</h2>
+    <button onclick="select('time','7:00 AM')">7:00 AM</button>
+    <button onclick="select('time','8:00 AM')">8:00 AM</button>
+    <button onclick="select('time','9:00 AM')">9:00 AM</button>
+    <button onclick="select('time','10:00 AM')">10:00 AM</button>
+</section>
+
+  <section class="step" id="step3">
+    <h2>Where should we go?</h2>
+
+    <button onclick="select('location','quiapo church')">quiapo church</button>
+    <button onclick="select('location','national museum')"> national museum</button>
+    <button onclick="select('location','binondo')">binondo</button>
+    <button onclick="select('location','all of the above!!!')">all of the above!!!</button>
+</section>
+
+
+<section class="step" id="step4">
+    <h2>What do you want to eat? 🍴</h2>
+
+    <div class="food-grid">
+        <div class="food" onclick="chooseFood('McDo')">McDo</div>
+        <div class="food" onclick="chooseFood('Mang Inasal')">Mang Inasal</div>
+        <div class="food" onclick="chooseFood('Buldak')">Buldak</div>
+        <div class="food" onclick="chooseFood('Shawarma')">Shawarma</div>
+        <div class="food" onclick="chooseFood('Ramen')">Ramen</div>
+    </div>
+
+    <input id="customFood" placeholder="Something specific in mind?">
+    <button onclick="customFood()">Confirm</button>
+</section>
+
+
+
+<section class="step" id="step5">
+    <h2>Our Date Plan 💖</h2>
+    <div id="summary" class="summary-box"></div>
+    <p>I’ll take care of everything. Just be ready ❤️</p>
+    <p>please take a screen shot of this, and send it to me :></p>
+</section>
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
